@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { Facebook } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Github } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -60,6 +60,30 @@ const Hero = () => {
               className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
             >
               <Facebook size={20} />
+            </a>
+            <a
+              href="https://instagram.com/its___aditya007"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
+            >
+              <Instagram size={20} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/aditya-vishwakarma007"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
+            >
+              <Linkedin size={20} />
+            </a>
+            <a
+              href="https://github.com/adityavis007"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
+            >
+              <Github size={20} />
             </a>
           </div>
         </div>
