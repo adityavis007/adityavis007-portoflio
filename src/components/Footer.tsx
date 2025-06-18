@@ -1,4 +1,6 @@
 
+import { Facebook } from 'lucide-react';
+
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-border py-8">
@@ -11,12 +13,14 @@ const Footer = () => {
             Aspiring Web Designer & Developer
           </p>
           <div className="flex justify-center space-x-6 mb-6">
-            <div className="w-10 h-10 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer">
-              <span className="text-sm font-bold">Li</span>
-            </div>
-            <div className="w-10 h-10 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer">
-              <span className="text-sm font-bold">Gh</span>
-            </div>
+            <a
+              href="https://www.facebook.com/aditya.vishakarma.5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
+            >
+              <Facebook size={18} />
+            </a>
           </div>
           <div className="border-t border-border pt-6">
             <p className="text-muted-foreground text-sm">

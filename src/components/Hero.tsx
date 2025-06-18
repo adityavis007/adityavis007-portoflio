@@ -1,5 +1,6 @@
 
 import { Button } from '@/components/ui/button';
+import { Facebook } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -50,14 +51,16 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Social Placeholders */}
+          {/* Social Links */}
           <div className="mt-12 flex justify-center space-x-6">
-            <div className="w-10 h-10 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer">
-              <span className="text-sm font-bold">Li</span>
-            </div>
-            <div className="w-10 h-10 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer">
-              <span className="text-sm font-bold">Gh</span>
-            </div>
+            <a
+              href="https://www.facebook.com/aditya.vishakarma.5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
+            >
+              <Facebook size={20} />
+            </a>
           </div>
         </div>
       </div>
