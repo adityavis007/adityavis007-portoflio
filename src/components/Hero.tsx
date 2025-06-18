@@ -10,9 +10,11 @@ const Hero = () => {
           <div className="mb-8 flex justify-center">
             <div className="relative">
               <div className="w-48 h-48 rounded-full bg-gradient-to-r from-primary to-blue-500 p-1 animate-pulse-glow">
-                <div className="w-full h-full rounded-full bg-muted flex items-center justify-center text-6xl font-bold text-primary">
-                  AV
-                </div>
+                <img
+                  src="https://i.postimg.cc/44w1tSQB/adiprot.png"
+                  alt="Aditya Vishwakarma"
+                  className="w-full h-full rounded-full object-cover"
+                />
               </div>
             </div>
           </div>
