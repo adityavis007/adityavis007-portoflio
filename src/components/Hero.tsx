@@ -1,21 +1,14 @@
-
 import { Button } from '@/components/ui/button';
 import { Facebook, Instagram, Linkedin, Github } from 'lucide-react';
-
 const Hero = () => {
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+  return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
             <div className="relative">
               <div className="w-48 h-48 rounded-full bg-gradient-to-r from-primary to-blue-500 p-1 animate-pulse-glow">
-                <img
-                  src="https://i.postimg.cc/44w1tSQB/adiprot.png"
-                  alt="Aditya Vishwakarma"
-                  className="w-full h-full rounded-full object-cover"
-                />
+                <img src="https://i.postimg.cc/44w1tSQB/adiprot.png" alt="Aditya Vishwakarma" className="w-full h-full rounded-full object-cover" />
               </div>
             </div>
           </div>
@@ -43,46 +36,21 @@ const Hero = () => {
             <Button className="glow-button bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold">
               Download Resume
             </Button>
-            <Button 
-              variant="outline" 
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-lg font-semibold"
-            >
-              View My Work
-            </Button>
+            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-lg font-semibold">View My Self</Button>
           </div>
 
           {/* Social Links */}
           <div className="mt-12 flex justify-center space-x-6">
-            <a
-              href="https://www.facebook.com/aditya.vishakarma.5"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
-            >
+            <a href="https://www.facebook.com/aditya.vishakarma.5" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer">
               <Facebook size={20} />
             </a>
-            <a
-              href="https://instagram.com/its___aditya007"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
-            >
+            <a href="https://instagram.com/its___aditya007" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer">
               <Instagram size={20} />
             </a>
-            <a
-              href="https://www.linkedin.com/in/aditya-vishwakarma007"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
-            >
+            <a href="https://www.linkedin.com/in/aditya-vishwakarma007" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer">
               <Linkedin size={20} />
             </a>
-            <a
-              href="https://github.com/adityavis007"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
-            >
+            <a href="https://github.com/adityavis007" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer">
               <Github size={20} />
             </a>
           </div>
@@ -92,10 +60,10 @@ const Hero = () => {
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl animate-float" style={{
+        animationDelay: '1s'
+      }}></div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
