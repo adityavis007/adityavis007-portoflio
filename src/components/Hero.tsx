@@ -1,7 +1,10 @@
+
 import { Button } from '@/components/ui/button';
 import { Facebook, Instagram, Linkedin, Github } from 'lucide-react';
+
 const Hero = () => {
-  return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+  return (
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
@@ -40,19 +43,46 @@ const Hero = () => {
           </div>
 
           {/* Social Links */}
-          <div className="mt-12 flex justify-center space-x-6">
-            <a href="https://www.facebook.com/aditya.vishakarma.5" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer">
-              <Facebook size={20} />
-            </a>
-            <a href="https://instagram.com/its___aditya007" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer">
-              <Instagram size={20} />
-            </a>
-            <a href="https://www.linkedin.com/in/aditya-vishwakarma007" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer">
-              <Linkedin size={20} />
-            </a>
-            <a href="https://github.com/adityavis007" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer">
-              <Github size={20} />
-            </a>
+          <div className="mt-12">
+            <h3 className="text-lg font-semibold mb-6 text-muted-foreground">Social Links</h3>
+            <div className="flex justify-center space-x-6">
+              <a 
+                href="https://www.facebook.com/aditya.vishakarma.5" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer hover:glow-border"
+                title="Facebook"
+              >
+                <Facebook size={20} />
+              </a>
+              <a 
+                href="https://instagram.com/its___aditya007" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer hover:glow-border"
+                title="Instagram"
+              >
+                <Instagram size={20} />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/aditya-vishwakarma007" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer hover:glow-border"
+                title="LinkedIn"
+              >
+                <Linkedin size={20} />
+              </a>
+              <a 
+                href="https://github.com/adityavis007" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-12 h-12 rounded-full border-2 border-primary/50 flex items-center justify-center text-primary/70 hover:border-primary hover:text-primary transition-colors cursor-pointer hover:glow-border"
+                title="GitHub"
+              >
+                <Github size={20} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -61,9 +91,11 @@ const Hero = () => {
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl animate-float" style={{
-        animationDelay: '1s'
-      }}></div>
+          animationDelay: '1s'
+        }}></div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
