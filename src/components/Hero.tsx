@@ -3,6 +3,13 @@ import { Button } from '@/components/ui/button';
 import { Facebook, Instagram, Linkedin, Github } from 'lucide-react';
 
 const Hero = () => {
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -39,7 +46,13 @@ const Hero = () => {
             <Button className="glow-button bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold">
               Download Resume
             </Button>
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-lg font-semibold">View My Self</Button>
+            <Button 
+              variant="outline" 
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-lg font-semibold"
+              onClick={scrollToAbout}
+            >
+              View My Self
+            </Button>
           </div>
 
           {/* Social Links */}
