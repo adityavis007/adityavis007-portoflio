@@ -66,7 +66,10 @@ const Projects = () => {
 
                   {/* Action Buttons */}
                   <div className="flex space-x-4">
-                    <button className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground py-2 px-4 rounded-lg font-medium transition-colors glow-button">
+                    <button 
+                      className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground py-2 px-4 rounded-lg font-medium transition-colors glow-button"
+                      onClick={() => window.open('https://adityavis007-portoflio.lovable.app/', '_blank')}
+                    >
                       View Project
                     </button>
                     <button className="flex-1 border border-primary text-primary hover:bg-primary hover:text-primary-foreground py-2 px-4 rounded-lg font-medium transition-colors">
