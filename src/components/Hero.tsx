@@ -10,6 +10,15 @@ const Hero = () => {
     }
   };
 
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/1d077b73-fe2a-41e2-9090-33e5ce1d6f90.png';
+    link.download = 'Aditya_Vishwakarma_Resume.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -43,7 +52,10 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button className="glow-button bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold">
+            <Button 
+              className="glow-button bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold"
+              onClick={downloadResume}
+            >
               Download Resume
             </Button>
             <Button 
