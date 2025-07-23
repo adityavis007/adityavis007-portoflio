@@ -72,7 +72,10 @@ const Projects = () => {
                     >
                       View Project
                     </button>
-                    <button className="flex-1 border border-primary text-primary hover:bg-primary hover:text-primary-foreground py-2 px-4 rounded-lg font-medium transition-colors">
+                    <button 
+                      className="flex-1 border border-primary text-primary hover:bg-primary hover:text-primary-foreground py-2 px-4 rounded-lg font-medium transition-colors"
+                      onClick={() => window.open('https://github.com/adityavis007/portfolio', '_blank')}
+                    >
                       Source Code
                     </button>
                   </div>
