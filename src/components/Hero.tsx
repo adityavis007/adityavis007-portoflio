@@ -27,7 +27,7 @@ const Hero = () => {
           <div className="mb-8 flex justify-center">
             <div className="relative">
               <div className="w-48 h-48 rounded-full bg-gradient-to-r from-primary to-blue-500 p-1 animate-pulse-glow">
-                <img src="https://i.postimg.cc/44w1tSQB/adiprot.png" alt="Aditya Vishwakarma" className="w-full h-full rounded-full object-cover" />
+                <img src="/lovable-uploads/5e71989a-2488-4441-bf5d-dcaec31d4b56.png" alt="Aditya Vishwakarma" className="w-full h-full rounded-full object-cover" />
               </div>
             </div>
           </div>
