@@ -7,6 +7,17 @@ const Projects = () => {
       technologies: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
       status: 'Completed',
       image: '🌐',
+      viewLink: 'https://adityavis007-portoflio.lovable.app/',
+      sourceLink: 'https://github.com/adityavis007/portfolio'
+    },
+    {
+      title: 'Spotify Clone',
+      description: 'A fully functional Spotify clone with music streaming capabilities, playlist management, and modern UI. Built with responsive design and smooth user experience.',
+      technologies: ['React', 'JavaScript', 'CSS', 'Web Audio API'],
+      status: 'Completed',
+      image: '🎵',
+      viewLink: 'https://spotify-clone-adityavis007.netlify.app/',
+      sourceLink: 'https://github.com/adityavis007/spotify-clone'
     },
     {
       title: 'Coming Soon...',
@@ -14,6 +25,8 @@ const Projects = () => {
       technologies: ['React', 'TypeScript', 'Node.js'],
       status: 'In Planning',
       image: '🚀',
+      viewLink: '#',
+      sourceLink: '#'
     },
   ];
 
@@ -68,13 +81,13 @@ const Projects = () => {
                   <div className="flex space-x-4">
                     <button 
                       className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground py-2 px-4 rounded-lg font-medium transition-colors glow-button"
-                      onClick={() => window.open('https://adityavis007-portoflio.lovable.app/', '_blank')}
+                      onClick={() => window.open(project.viewLink, '_blank')}
                     >
                       View Project
                     </button>
                     <button 
                       className="flex-1 border border-primary text-primary hover:bg-primary hover:text-primary-foreground py-2 px-4 rounded-lg font-medium transition-colors"
-                      onClick={() => window.open('https://github.com/adityavis007/portfolio', '_blank')}
+                      onClick={() => window.open(project.sourceLink, '_blank')}
                     >
                       Source Code
                     </button>
