@@ -13,7 +13,7 @@ const Projects = () => {
     {
       title: 'Spotify Clone',
       description: 'A fully functional Spotify clone with music streaming capabilities, playlist management, and modern UI. Built with responsive design and smooth user experience.',
-      technologies: ['React', 'JavaScript', 'CSS', 'Web Audio API'],
+      technologies: ['React', 'JavaScript', 'CSS', 'HTML'],
       status: 'Completed',
       image: '🎵',
       viewLink: 'https://spotify-clone-adityavis007.netlify.app/',
